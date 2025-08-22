@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <script>
+      function sunny(){
+        var a = document.getElementById("no1").value;
+        var b = document.getElementById("no2").value;
+        document.getElementById("r1") .innerText = parseInt(a) * parseInt(b);
+      }
+      function bobby(){
+        var a = document.getElementById("no1").value;
+        var b = document.getElementById("no2").value;
+        document.getElementById("r1") .innerText = parseInt(a) / parseInt(b);
+      }
+
+    </script>
+    <link rel="stylesheet" href="html2.css">
+</head>
+<body>
+    <div class="container">
+        
+    <div class="content">
+    <h1 class="heading">Calculator</h1><br>
+    <label>Num1</label>
+    <input id="no1" value="" type="number"><br>
+    <label>Num2</label>
+    <input id="no2" value="" type="number"><br><br>
+    <div id="r1">JAWAB</div>
+<br><br><br>
+<div class="but"> 
+<button class="button" onclick="sunny()">*</button>
+<button class="button" onclick="bobby()">/</button>
+</div>
+</div>
+</div>
+</body>
+</html>
